@@ -1,0 +1,143 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Uno_rules",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "two_player_rules": false,
+            "time": "limited",
+            "rotating_cards": {
+                "rotating_zero": true,
+                "rotating_seven": true
+            },
+            "playing_same_cards": {
+                "same_number": true,
+                "same_color": false
+            },
+            "draw": "one"
+        }
+    ],
+    "required": [
+        "two_player_rules",
+        "time",
+        "rotating_cards",
+        "playing_same_cards",
+        "draw"
+    ],
+    "properties": {
+        "two_player_rules": {
+            "$id": "#/properties/two_player_rules",
+            "type": "boolean",
+            "title": "The two_player_rules schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "time": {
+            "$id": "#/properties/time",
+            "type": "string",
+            "title": "The time schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "limited"
+            ]
+        },
+        "rotating_cards": {
+            "$id": "#/properties/rotating_cards",
+            "type": "object",
+            "title": "The rotating_cards schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "rotating_zero": true,
+                    "rotating_seven": true
+                }
+            ],
+            "required": [
+                "rotating_zero",
+                "rotating_seven"
+            ],
+            "properties": {
+                "rotating_zero": {
+                    "$id": "#/properties/rotating_cards/properties/rotating_zero",
+                    "type": "boolean",
+                    "title": "The rotating_zero schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "rotating_seven": {
+                    "$id": "#/properties/rotating_cards/properties/rotating_seven",
+                    "type": "boolean",
+                    "title": "The rotating_seven schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "playing_same_cards": {
+            "$id": "#/properties/playing_same_cards",
+            "type": "object",
+            "title": "The playing_same_cards schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "same_number": true,
+                    "same_color": false
+                }
+            ],
+            "required": [
+                "same_number",
+                "same_color"
+            ],
+            "properties": {
+                "same_number": {
+                    "$id": "#/properties/playing_same_cards/properties/same_number",
+                    "type": "boolean",
+                    "title": "The same_number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "same_color": {
+                    "$id": "#/properties/playing_same_cards/properties/same_color",
+                    "type": "boolean",
+                    "title": "The same_color schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "draw": {
+            "$id": "#/properties/draw",
+            "type": "string",
+            "title": "The draw schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "one"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
