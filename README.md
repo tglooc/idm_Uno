@@ -1,6 +1,11 @@
 # IMD project : Uno 
 
 ### Q1.
+two_players_rules : regles des passe / changement de sens à 2
+Time : temps limité ou non
+Rotating_cards : zero et sept font bouger les paquets
+Playing_same_cards : jouer sur la carte si elle a la même valeur, et éventuellement la meme couleur
+Draw : pioche une carte ou pioche jusqu'à pouvoir jouer (max 3 cartes)
 Il existe une infinité de variantes vu le nombre de règles qu'il existe. Si l'on prend uniquement en compte celles de mon FM, il en existe 24.
 
 ### Q3.
