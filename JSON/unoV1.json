@@ -1,0 +1,13 @@
+{
+    "two_player_rules": false,
+    "time": "limited",
+    "rotating_cards": {
+        "rotating_zero": true,
+        "rotating_seven": true
+    },
+    "playing_same_cards": {
+        "same_number": true,
+        "same_color": false
+    },
+    "draw": "one"
+}
