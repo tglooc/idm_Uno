@@ -1,0 +1,23 @@
+grammar org.xtext.example.uno.Game with org.eclipse.xtext.common.Terminals
+
+generate game "http://www.xtext.org/example/uno/Game"
+
+Game:
+	'Game' '{' ((twoPlayers = 'twoPlayers'?) & (time=Time) & (rotatingCards = RotatingCards?) & (playingSameCards = PlayingSameCards?) & (draw = Draw))'}'
+;
+
+Time:
+	'time' '{' (limited = 'limited' | unlimited = 'unlimited') '}'
+;
+
+RotatingCards:
+	{RotatingCards} 'rotatingCards' '{' ((rotatingZero = 'rotatingZero'?) & (rotatingSeven= 'rotatingSeven'?)) '}'
+;
+
+PlayingSameCards:
+	'playingSameCards' '{' ((sameNumber = 'sameNumber') & (sameColor = 'sameColor'?)) '}'
+;
+
+Draw:
+	'draw' '{'  (oneCard = 'oneCard' | threeCards = 'threeCards') '}'
+;

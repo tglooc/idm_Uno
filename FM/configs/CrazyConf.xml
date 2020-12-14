@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="Uno"/>
+	<feature manual="selected" name="Two_players_rules"/>
+	<feature automatic="selected" name="Time"/>
+	<feature manual="selected" name="Limited"/>
+	<feature automatic="unselected" name="Unlimited"/>
+	<feature automatic="selected" manual="selected" name="Roatating_cards"/>
+	<feature manual="selected" name="Rotating_0"/>
+	<feature manual="selected" name="Rotating_7"/>
+	<feature automatic="selected" manual="selected" name="Playing_same_cards"/>
+	<feature automatic="selected" name="Same_number"/>
+	<feature manual="selected" name="Same_color"/>
+	<feature automatic="selected" name="Draw"/>
+	<feature automatic="unselected" name="One_card"/>
+	<feature manual="selected" name="Three_cards"/>
+</configuration>

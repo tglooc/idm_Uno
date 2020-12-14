@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extendedFeatureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Uno">
+			<feature name="Two_players_rules"/>
+			<alt abstract="true" mandatory="true" name="Time">
+				<feature name="Limited"/>
+				<feature name="Unlimited"/>
+			</alt>
+			<or abstract="true" name="Roatating_cards">
+				<feature name="Rotating_0"/>
+				<feature name="Rotating_7"/>
+			</or>
+			<and abstract="true" name="Playing_same_cards">
+				<feature mandatory="true" name="Same_number"/>
+				<feature name="Same_color"/>
+			</and>
+			<alt abstract="true" mandatory="true" name="Draw">
+				<feature name="One_card"/>
+				<feature name="Three_cards"/>
+			</alt>
+		</and>
+	</struct>
+</extendedFeatureModel>
